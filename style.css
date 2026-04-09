@@ -1,33 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
 body{
-font-family:'Poppins',sans-serif;
-background:#F5F7FB;
+font-family: 'Fredoka', sans-serif;
+margin:0;
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+
 text-align:center;
-padding:40px;
+}
+
+/* HOME */
+body.home{
+background-image: url("background-home.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/* KIDS */
+body.kids{
+background-image: url("background-kids.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/* PARENT */
+body.parent{
+background-image: url("background-parent.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 h1{
-color:#333;
+font-size:65px;
+color:#3A7DFF;
+margin-bottom:25px;
+letter-spacing:2px;
+font-weight:600;
 }
 
-.card{
-background:white;
-padding:25px;
-margin:20px auto;
-width:300px;
-border-radius:20px;
-box-shadow:0 8px 20px rgba(0,0,0,0.05);
+.container{
+background: rgba(255,255,255,0.9);
+padding:35px 45px;
+border-radius:25px;
+display:inline-block;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
 button{
-background:#A5C9FF;
+display:block;
+width:220px;
+margin:15px auto;
+padding:14px;
 border:none;
-padding:12px 25px;
 border-radius:15px;
-font-size:16px;
+background:#8FB8FF;
+color:white;
+font-size:18px;
+font-family: 'Fredoka', sans-serif;
 cursor:pointer;
-transition:0.2s;
+transition:0.3s;
 }
 
 button:hover{
+background:#6EA0FF;
 transform:scale(1.05);
 }

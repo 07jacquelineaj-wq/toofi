@@ -3,17 +3,31 @@
 <head>
 <title>Parent Dashboard</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
 </head>
 
-<body>
+<body class="parent">
 
 <h1>Parent Dashboard</h1>
 
-<div class="card">
-<h2>Child Streak</h2>
-<p id="streak">0 days</p>
+<div class="container">
+
+<h2>Streak</h2>
+<h1 id="parentStreak">0</h1>
+
+<h3>Today's Brushing</h3>
+<p id="todayBrush">Loading...</p>
+
+<h3>Today's Parent PIN</h3>
+<h2 id="todayPIN">----</h2>
+
+<br>
+
+<button onclick="resetData()">Reset</button>
+<button onclick="changePassword()">Change Password</button>
+
 </div>
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=TOOFI_PARENT"> 
+
+<script src="script.js"></script>
+
 </body>
 </html>

@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://unpkg.com/html5-qrcode"></script>
-<title>Toofi Kid Mode</title>
+<title>Kid Mode</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
 </head>
 
-<body>
+<body class="kids">
 
-<h1>🦷 Hello from Toofi!</h1>
+<h1> Toofi Kids</h1>
 
 <div class="card">
-<h2>Streak 🔥</h2>
-<p id="streak">0 days</p>
+<h2>🔥 Streak</h2>
+<p id="streak">0</p>
 </div>
 
 <div class="card">
-<button onclick="brushMorning()">Morning Brush ☀️</button>
-<button onclick="brushNight()">Night Brush 🌙</button>
-</div>
-<button onclick="startScan()">Verify with Parent QR</button>
+<h2> Daily Brush </h2>
 
-<div id="reader" style="width:300px;"></div>
+<button onclick="brush('morning')">Morning Brush</button>
+
+<button onclick="brush('night')">Night Brush</button>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
